@@ -1,0 +1,36 @@
+auto lo
+iface lo inet loopback
+
+#pre-up modprobe g_ether
+#auto usb0
+#iface usb0 inet static
+#address 192.168.10.10
+#netmask 255.255.255.0
+#gateway 192.168.10.20
+
+auto wlan1
+iface wlan1 inet static
+address 192.168.0.24
+netmask 255.255.255.0
+gateway 192.168.0.1
+wpa-driver wext
+wpa-ssid YourNetworkSSID
+wpa-psk keyGeneratedUsingWPA_PASSPHRASEonYourSSIDandPassphrase
+wpa-ap-scan 2
+wpa-proto RSN
+wpa-pairwise CCMP
+wpa-group CCMP
+wpa-key-mgmt WPA-PSK
+
+#auto wlan0
+#iface wlan0 inet dhcp 
+#wpa-ssid 
+#wpa-psk  
+#wireless-mode managed
+#wireless-essid any
+#wpa-driver wext
+#wpa-ap-scan 2
+#wpa-proto RSN
+#wpa-pairwise CCMP
+#wpa-group CCMP
+#wpa-key-mgmt WPA-PSK
