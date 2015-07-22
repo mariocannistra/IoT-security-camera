@@ -15,4 +15,4 @@ License Information
 
 All contents of this repository are released under [Creative Commons Attribution 4.0 International (CC BY 4.0)](http://creativecommons.org/licenses/by/4.0/).
 
-Author: Mario Cannistrà
+Author: [Mario Cannistrà](https://twitter.com/MarioCannistra)
